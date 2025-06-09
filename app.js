@@ -37,6 +37,7 @@ function moveman(type) {
 
     }
     else if (type === "manAction") {
+        man.style.width = 300 + 'px '
         if (!manAction) {
             man.src = "images/man-action.gif"
         }

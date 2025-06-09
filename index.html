@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dog and Man Game</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="main">
-        <img id="dog" src="images/dog.gif" class="left-player">
-
-        <img id="man" src="images/man.gif" class="right-player">
-
+  <div class="main">
+    <img id="dog" src="images/dog.gif" class="left-player" />
+    <div class="control">
+      <button onclick="moveDog('dogForward')">Right</button>
+      <button onclick="moveDog('dogBackword')">Left</button>
+      <button onclick="moveDog('dogAction')">Action</button>
     </div>
 
+    <img id="man" src="images/man.gif" class="right-player" />
+    <div class="control-2">
+      <button onclick="moveman('manForward')">Right</button>
+      <button onclick="moveman('manBackword')">Left</button>
+      <button onclick="moveman('manAction')">Action</button>
+    </div>
+  </div>
 
-    <script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
